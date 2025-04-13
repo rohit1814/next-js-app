@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4    # checkout to the current branch(i.e feature-branch) ==> by default it's on main branch
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3  # setup the node environment before doing anything else
+      uses: actions/setup-node@v3  # setup the node environment before doing anything else 
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
